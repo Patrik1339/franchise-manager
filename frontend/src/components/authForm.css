@@ -1,0 +1,14 @@
+form {
+    width: fit-content;
+}
+
+form input, form button {
+    display: block;
+}
+
+span {
+    display: block;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}

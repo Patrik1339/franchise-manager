@@ -51,6 +51,9 @@ ALTER TABLE user_legal_entities
 ALTER TABLE legal_entities
     ADD CONSTRAINT uc_legal_entities_taxidentificationnumber UNIQUE (tax_identification_number);
 
+ALTER TABLE users
+    ADD CONSTRAINT uc_users_email UNIQUE (email);
+
 ALTER TABLE legal_entities
     ADD CONSTRAINT FK_LEGAL_ENTITIES_ON_ADDRESS FOREIGN KEY (address_id) REFERENCES addresses (id);
 
