@@ -1,0 +1,14 @@
+#div-content {
+    display: flex;
+    flex-direction: column; /* Le ține una sub alta */
+    align-items: center;    /* Centrează pe orizontală pe mijloc */
+    flex: 1;                /* Ocupă tot restul spațiului din dreapta navbar-ului */
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Opțional: Setezi o lățime maximă pentru ca formularul și tabelul să nu se întindă la infinit pe ecranele mari */
+#div-content > * {
+    width: 100%;
+    max-width: 800px;
+}

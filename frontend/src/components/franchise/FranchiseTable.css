@@ -1,0 +1,30 @@
+.franchise-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.franchise-table th {
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.franchise-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.franchise-tr {
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+.franchise-tr:hover {
+    background-color: #f1f1f1;
+}
+
+.franchise-tr.selected {
+    background-color: #e0f7fa;
+}

@@ -27,7 +27,8 @@ public class User {
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private Set<UserLegalEntity> companyMemberships = new HashSet<>();
-    
+
+    @Column(unique = true)
     private String email;
     private String password;
 }
