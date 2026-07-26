@@ -23,6 +23,7 @@ CREATE TABLE legal_entities
     phone_number              VARCHAR(255),
     establishment_date        date,
     address_id                BIGINT,
+    franchisor_id             BIGINT,
     is_active                 BOOLEAN                                 NOT NULL,
     CONSTRAINT pk_legal_entities PRIMARY KEY (id)
 );
@@ -56,6 +57,9 @@ ALTER TABLE users
 
 ALTER TABLE legal_entities
     ADD CONSTRAINT FK_LEGAL_ENTITIES_ON_ADDRESS FOREIGN KEY (address_id) REFERENCES addresses (id);
+
+ALTER TABLE legal_entities
+    ADD CONSTRAINT FK_LEGAL_ENTITIES_ON_FRANCHISOR FOREIGN KEY (franchisor_id) REFERENCES legal_entities (id);
 
 ALTER TABLE user_legal_entities
     ADD CONSTRAINT FK_USER_LEGAL_ENTITIES_ON_LEGAL_ENTITY FOREIGN KEY (legal_entity_id) REFERENCES legal_entities (id);

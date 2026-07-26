@@ -1,0 +1,28 @@
+aside {
+    background-color: #00bcd4;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    border-bottom: 1px solid black;
+}
+
+aside li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+aside li a:hover {
+    background-color: #00a5bb;
+}
